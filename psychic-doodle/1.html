@@ -1,0 +1,376 @@
+<!-- GEMINIX POWER SYSTEMS INC. 网站源码文件结构 -->
+<!-- 
+    文件清单：
+    - index.html (首页)
+    - products.html (产品中心)
+    - support.html (技术支持)
+    - solutions.html (应用方案)
+    - about.html (关于我们)
+    - contact.html (联系我们)
+    - css/styles.css (全局样式)
+    - js/script.js (全局功能)
+    - images/ (图片文件夹，用户需自行添加logo.png, slide1.jpg, slide2.jpg, slide3.jpg)
+-->
+
+<!-- ==================== 以下是各文件源码 ==================== -->
+
+<!-- ========== index.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMINIX POWER SYSTEMS - Home</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome 5 for icons (free) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Logo image placeholder - replace with your logo (images/logo.png) -->
+                <img src="images/logo.png" alt="GEMINIX POWER SYSTEMS INC." class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Carousel Section -->
+        <section class="carousel-section">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <!-- Slide 1 - replace images/slide1.jpg with your image -->
+                    <div class="carousel-slide">
+                        <img src="images/slide1.jpg" alt="High Power IGBT Modules">
+                        <div class="carousel-caption">
+                            <h2>Next-Gen Power Devices</h2>
+                            <p>Efficiency & Reliability for Industrial Applications</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 - replace images/slide2.jpg -->
+                    <div class="carousel-slide">
+                        <img src="images/slide2.jpg" alt="Advanced MOSFET Technology">
+                        <div class="carousel-caption">
+                            <h2>Advanced MOSFET Technology</h2>
+                            <p>Low Rds(on) & Fast Switching</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 - replace images/slide3.jpg -->
+                    <div class="carousel-slide">
+                        <img src="images/slide3.jpg" alt="Intelligent Power Modules">
+                        <div class="carousel-caption">
+                            <h2>Intelligent Power Modules</h2>
+                            <p>Integrated Solutions for Renewable Energy</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Controls -->
+                <button class="carousel-control prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </section>
+
+        <!-- Company Intro / Featured Products -->
+        <section class="intro-section">
+            <div class="container">
+                <h1 class="section-title">Powering the Future with Semiconductor Excellence</h1>
+                <p class="section-subtitle">GEMINIX POWER SYSTEMS INC. provides state-of-the-art power discretes and modules for industrial, automotive, and energy applications.</p>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-microchip fa-3x"></i>
+                        <h3>IGBTs & MOSFETs</h3>
+                        <p>Wide voltage range from 600V to 6500V, low switching losses.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-bolt fa-3x"></i>
+                        <h3>Power Modules</h3>
+                        <p>Integrated solutions with optimized thermal performance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-cogs fa-3x"></i>
+                        <h3>Gate Drivers</h3>
+                        <p>Reliable driver ICs and evaluation boards.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 GEMINIX POWER SYSTEMS INC. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- ========== products.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMINIX POWER SYSTEMS - Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="GEMINIX POWER SYSTEMS INC." class="logo-img">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Product Center</h1>
+            <p class="page-description">Explore our wide range of power semiconductors engineered for efficiency and robustness.</p>
+            <div class="products-grid">
+                <div class="product-item">
+                    <img src="images/product-igbt.jpg" alt="IGBT Modules" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=IGBT+Module'">
+                    <h3>IGBT Modules</h3>
+                    <p>650V, 1200V, 1700V up to 3600A. Low VCE(sat) and soft switching.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/product-mosfet.jpg" alt="MOSFETs" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=MOSFET'">
+                    <h3>MOSFETs</h3>
+                    <p>SiC MOSFETs, CoolMOS™, and LV MOSFETs from 20V to 1200V.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/product-diode.jpg" alt="Diodes" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=Diodes'">
+                    <h3>Rectifiers & Diodes</h3>
+                    <p>Fast recovery, Schottky, and bridge rectifiers for all topologies.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/product-driver.jpg" alt="Gate Drivers" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=Gate+Drivers'">
+                    <h3>Gate Drivers</h3>
+                    <p>Isolated and non-isolated drivers with integrated protection.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/product-pim.jpg" alt="Power Modules" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=Power+Modules'">
+                    <h3>PIMs</h3>
+                    <p>Power Integrated Modules for motor drives and UPS.</p>
+                </div>
+                <div class="product-item">
+                    <img src="images/product-ipm.jpg" alt="IPMs" class="product-img" onerror="this.src='https://via.placeholder.com/300x200?text=IPMs'">
+                    <h3>Intelligent Power Modules</h3>
+                    <p>Compact IPMs with built-in control and protection.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2025 GEMINIX POWER SYSTEMS INC. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- ========== support.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMINIX POWER SYSTEMS - Support</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>... (same header as index with active on Support) ...</header>
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Technical Support</h1>
+            <div class="support-grid">
+                <div class="support-card">
+                    <i class="fas fa-file-pdf fa-2x"></i>
+                    <h3>Datasheets</h3>
+                    <p>Download latest datasheets, application notes, and user manuals.</p>
+                    <a href="#" class="btn">Browse Library</a>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-question-circle fa-2x"></i>
+                    <h3>FAQs</h3>
+                    <p>Find answers to common technical questions about our products.</p>
+                    <a href="#" class="btn">View FAQs</a>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-tools fa-2x"></i>
+                    <h3>Design Tools</h3>
+                    <p>Simulation models, PCB footprints, and thermal calculators.</p>
+                    <a href="#" class="btn">Access Tools</a>
+                </div>
+                <div class="support-card">
+                    <i class="fas fa-life-ring fa-2x"></i>
+                    <h3>Technical Assistance</h3>
+                    <p>Get direct support from our application engineers.</p>
+                    <a href="contact.html" class="btn">Contact Support</a>
+                </div>
+            </div>
+            <div class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h4>What is the maximum junction temperature for IGBT modules?</h4>
+                    <p>Most of our IGBT modules are rated for Tj max = 175°C, with some variants up to 200°C. Please refer to the specific datasheet.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer SPICE models?</h4>
+                    <p>Yes, we provide PSpice and SIMetrix models for major products. Request via support form.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>... (same footer) ...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- ========== solutions.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>... (similar head) ...</head>
+<body>
+    <header>... (active on Solutions) ...</header>
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Application Solutions</h1>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <img src="images/solution-renewable.jpg" alt="Renewable Energy" onerror="this.src='https://via.placeholder.com/400x250?text=Renewable+Energy'">
+                    <h3>Renewable Energy</h3>
+                    <p>Inverters for solar and wind power systems using high-efficiency IGBTs and SiC MOSFETs.</p>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-ev.jpg" alt="Electric Vehicles" onerror="this.src='https://via.placeholder.com/400x250?text=EV+Drivetrain'">
+                    <h3>Electric Vehicles</h3>
+                    <p>Traction inverters, onboard chargers, and DC/DC converters with automotive-grade modules.</p>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-industrial.jpg" alt="Industrial Drives" onerror="this.src='https://via.placeholder.com/400x250?text=Industrial+Drives'">
+                    <h3>Industrial Drives</h3>
+                    <p>Motor control, servo drives, and robotics powered by our IPMs and gate drivers.</p>
+                </div>
+                <div class="solution-card">
+                    <img src="images/solution-ups.jpg" alt="UPS" onerror="this.src='https://via.placeholder.com/400x250?text=UPS+Systems'">
+                    <h3>Uninterruptible Power Supplies</h3>
+                    <p>High-reliability IGBTs and rectifiers for online UPS and backup systems.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- ========== about.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+    <header>... (active on About Us) ...</header>
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">About GEMINIX POWER SYSTEMS</h1>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2010, GEMINIX POWER SYSTEMS INC. is a leading provider of power semiconductors, serving customers in over 40 countries. We specialize in IGBTs, MOSFETs, diodes, and power modules for industrial, automotive, and renewable energy applications.</p>
+                    <p>Our mission is to deliver energy-efficient solutions that enable a greener future. With a dedicated R&D team and state-of-the-art manufacturing, we ensure highest quality and reliability.</p>
+                    <p>Headquartered in Delaware, USA, we have global sales and support offices in Europe and Asia.</p>
+                </div>
+                <div class="about-stats">
+                    <div><span>15+</span> Years of Innovation</div>
+                    <div><span>2000+</span> Products</div>
+                    <div><span>40+</span> Countries</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- ========== contact.html ========== -->
+<!DOCTYPE html>
+<html lang="en">
+<head>...</head>
+<body>
+    <header>... (active on Contact) ...</header>
+    <main class="page-content">
+        <div class="container">
+            <h1 class="page-title">Contact Us & Leave a Message</h1>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Silicon Drive, Newark, DE 19702, USA</p>
+                    <p><i class="fas fa-phone"></i> +1 (302) 555-0199</p>
+                    <p><i class="fas fa-envelope"></i> info@geminixpower.com</p>
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3077.123... (short placeholder)" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="message-form">
+                    <h3>Leave a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message / Inquiry" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                    <div id="formFeedback" class="form-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>...</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
