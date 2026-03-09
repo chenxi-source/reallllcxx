@@ -1,0 +1,77 @@
+// js/main.js
+
+// 轮播功能 (首页)
+document.addEventListener('DOMContentLoaded', function() {
+  const slidesContainer = document.querySelector('.carousel-slides');
+  if (!slidesContainer) return; // 如果不是首页，没有轮播则退出
+
+  const slides = document.querySelectorAll('.carousel-slide');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const dotsContainer = document.getElementById('carouselDots');
+
+  let currentIndex = 0;
+  const totalSlides = slides.length;
+
+  // 创建dots
+  function createDots() {
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      dot.dataset.index = i;
+      dot.addEventListener('click', function() {
+        goToSlide(parseInt(this.dataset.index));
+      });
+      dotsContainer.appendChild(dot);
+    }
+  }
+  createDots();
+
+  const dots = document.querySelectorAll('.dot');
+  function updateDots() {
+    dots.forEach((dot, idx) => {
+      if (idx === currentIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+
+  function goToSlide(index) {
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+    currentIndex = index;
+    slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    updateDots();
+  }
+
+  // 下一张
+  function nextSlide() {
+    goToSlide(currentIndex + 1);
+  }
+  // 上一张
+  function prevSlide() {
+    goToSlide(currentIndex - 1);
+  }
+
+  // 事件监听
+  if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+  if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+
+  // 自动轮播 (每隔5秒)
+  let autoPlay = setInterval(nextSlide, 5000);
+
+  // 鼠标悬停停止自动轮播
+  const carousel = document.querySelector('.carousel-container');
+  carousel.addEventListener('mouseenter', () => clearInterval(autoPlay));
+  carousel.addEventListener('mouseleave', () => {
+    autoPlay = setInterval(nextSlide, 5000);
+  });
+
+  // 初始化
+  goToSlide(0);
+});
+
+// 所有页面通用: 高亮当前导航(根据URL自动激活，但已经静态处理active类，不需要额外处理)
+// 可添加一些平滑滚动等
